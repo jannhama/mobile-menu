@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mobile-menu example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="menu-container mobile-menu-container">
+      <div id="mobmenu" class="mobile-menu-button">&#8801;</div>
+      <div id="mm-container" class="menu-visible">
+        <div class="menu-item">
+          Menu1
+        </div>
+        <div class="menu-item">
+          Menu2
+        </div>
+        <div class="menu-item">
+          Menu3
+        </div>
+      </div>
+    </div>
+    <div class="welcome-text">
+      Welcome to the mobile menu
+    </div>
+    <script>
+      var id = document.getElementById('mobmenu');
+      id.addEventListener('click', function () {
+        var menu = document.getElementById('mm-container');
+        menu.classList.toggle("menu-visible");
+      });
+    </script>
+  </body>
+</html>
