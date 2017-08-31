@@ -8,7 +8,7 @@
   <body>
     <div class="menu-container mobile-menu-container">
       <div id="mobmenu" class="mobile-menu-button">&#8801;</div>
-      <div id="mm-container" class="menu-visible">
+      <div id="mmid" class="mm-container">
         <div class="menu-item">
           Menu1
         </div>
@@ -26,8 +26,14 @@
     <script>
       var id = document.getElementById('mobmenu');
       id.addEventListener('click', function () {
-        var menu = document.getElementById('mm-container');
-        menu.classList.toggle("menu-visible");
+        var menu = document.getElementById('mmid');
+        console.log(menu.style.height);
+        if (menu.style.height === "6em") {
+          menu.style.height = "0em";
+        } else {
+          menu.style.height = "6em";
+        }
+
       });
     </script>
   </body>
