@@ -73,7 +73,7 @@ body {
 
 /* These are for tablets and desktops */
 @media screen and (min-width: 768px) {
-  #mm-container, .menu-container {
+  #mmid, .menu-container {
     border: 1px solid #000000;
     box-sizing: border-box;
     display: flex;
