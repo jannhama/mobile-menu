@@ -1,8 +1,8 @@
 
 html {
+  background-color: #ffffff;
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
-  background-color: #ffffff;
 }
 
 a {
@@ -11,8 +11,8 @@ a {
 }
 
 body {
-  font-family: 'open_sansregular', sans-serif;
   background-color: #ffffff;
+  font-family: 'open_sansregular', sans-serif;
   height: 100vh;
 }
 
@@ -24,30 +24,30 @@ body {
 @media screen and (max-width: 767px) {
 
   #mm-container {
-    box-sizing: border-box;
     background: #FFFFFF;
-    width: 100%;
     border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .mobile-menu-container {
     display: block;
-    position: relative;
     height: auto;
+    position: relative;
     width: 100%;
   }
 
   .mobile-menu-button {
-    width: 100%;
-    height: 32px;
-    font-size: 2em;
-    text-align: center;
+    background: #4444FF;
+    border: none;
+    border-radius: 0;
     color: white;
     display: block;
+    font-size: 2em;
+    height: 32px;
     position: relative;
-    background: #4444FF;
-    border-radius: 0;
-    border: none;
+    text-align: center;
+    width: 100%;
   }
 
   .mobile-menu-button:hover {
@@ -56,31 +56,31 @@ body {
   }
 
   .menu-item {
-    display: block;
-    position: relative;
-    padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
-    width: 100%;
+    display: block;
+    padding: 8px;
+    position: relative;
     text-align: center;
+    width: 100%;
   }
 
   .menu-visible {
-    visibility: hidden;
     height: 0;
+    visibility: hidden;
   }
 }
 
 /* These are for tablets and desktops */
 @media screen and (min-width: 768px) {
   #mm-container, .menu-container {
+    border: 1px solid #000000;
     box-sizing: border-box;
-    width: 600px;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: nowrap;
     height: 2em;
-    border: 1px solid #000000;
+    justify-content: flex-start;
+    width: 600px;
   }
 
   .mobile-menu-button {
@@ -88,9 +88,9 @@ body {
   }
 
   .menu-item {
-    visibility: visible;
     margin-left: 1em;
     margin-right: 1em;
+    visibility: visible;
     width: 100px;
   }
 
@@ -104,8 +104,8 @@ body {
 /* Common things are here */
 .menu-item {
   align-self: center;
-  font-weight: bolder;
   color: #000000;
+  font-weight: bolder;
 }
 
 .menu-item:hover {
